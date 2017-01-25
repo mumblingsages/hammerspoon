@@ -19,6 +19,7 @@ local hyperKey = hs.hotkey.modal.new({}, "f17")
 -- h → HazeOver (configure in HazeOver preferences)
 -- n → Notifications configure in System preferences → Keyboard → Shortcuts → Mission Control)
 -- o → Omnifocus ( Keyboard Maestro )
+-- s → Safari ( Keyboard Maestro )
 -- SPACE → Spotlight (configure in System Preferences → Keyboard → Shortcuts → Spotlight, moved so that ⌘␣ could be used for Quicksilver)
 -- 1 through 6 → Optimal Layout window positions
 hyperBindings = {'b','d','e','f','h','n','o','SPACE','1','2','3','4','5','6'}
