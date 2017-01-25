@@ -17,12 +17,13 @@ local hyperKey = hs.hotkey.modal.new({}, "f17")
 -- e → Evernote ( Keyboard Maestro )
 -- f → Fantastical (configure in Fantastical preferences)
 -- h → HazeOver (configure in HazeOver preferences)
+-- m → Email ( Keyboard Maestro )
 -- n → Notifications configure in System preferences → Keyboard → Shortcuts → Mission Control)
 -- o → Omnifocus ( Keyboard Maestro )
 -- s → Safari ( Keyboard Maestro )
 -- SPACE → Spotlight (configure in System Preferences → Keyboard → Shortcuts → Spotlight, moved so that ⌘␣ could be used for Quicksilver)
--- 1 through 6 → Optimal Layout window positions
-hyperBindings = {'b','d','e','f','h','n','o','SPACE','1','2','3','4','5','6'}
+-- 0 through 6 + Z → Optimal Layout window positions
+hyperBindings = {'b','d','e','f','h','n','o','SPACE','0','1','2','3','4','5','6','z'}
 
 for i,key in ipairs(hyperBindings) do
   hyperKey:bind({}, key, nil, function() hs.eventtap.keyStroke(hyperModifiers, key)
