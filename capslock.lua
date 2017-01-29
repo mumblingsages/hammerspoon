@@ -23,7 +23,8 @@ local hyperKey = hs.hotkey.modal.new({}, "f17")
 -- s → Safari ( Keyboard Maestro )
 -- SPACE → Spotlight (configure in System Preferences → Keyboard → Shortcuts → Spotlight, moved so that ⌘␣ could be used for Quicksilver)
 -- 0 through 6 + Z → Optimal Layout window positions
-hyperBindings = {'b','d','e','f','h','m','n','o','s','SPACE','0','1','2','3','4','5','6','z'}
+-- delete → For going mobile ( Keyboard Maestro )
+hyperBindings = {'b','d','e','f','h','m','n','o','s','SPACE','0','1','2','3','4','5','6','z','delete'}
 
 for i,key in ipairs(hyperBindings) do
   hyperKey:bind({}, key, nil, function() hs.eventtap.keyStroke(hyperModifiers, key)
